@@ -58,14 +58,14 @@ export const defaultMessage: ChatMessage = {
 
 const models = {
   "gpt-3.5": {
-    "16k": "gpt-3.5-turbo-0125"
+    "16k": "gpt-3.5-turbo-1106"
   },
   "gpt-4": {
     "8k": "gpt-4",
     "32k": "gpt-4-32k"
   },
   "gpt-4-preview": {
-    "128k": "gpt-4-0125-preview"
+    "128k": "gpt-4-1106-preview"
   }
 } satisfies {
   [k in SimpleModel]: {
@@ -74,11 +74,11 @@ const models = {
 }
 
 const modelFee = {
-  "gpt-3.5-turbo-0125": {
+  "gpt-3.5-turbo-1106": {
     input: 0.0005,
     output: 0.0015
   },
-  "gpt-4-0125-preview": {
+  "gpt-4-1106-preview": {
     input: 0.01,
     output: 0.03
   },
